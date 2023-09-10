@@ -66,6 +66,7 @@ function shouldrun() {
     fi
 
     test=$(testname "$1")
+    # shellcheck disable=SC2076
     if [[ "|${TESTS/,/|}|" =~ "|${test}|" ]]; then
         return 0
     fi
