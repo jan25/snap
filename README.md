@@ -1,10 +1,16 @@
-# snap
+# snap [![example workflow](https://github.com/jan25/snap/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/jan25/snap/actions/workflows/shellcheck.yml)
 
 `snap` is a snapshot testing tool written in bash. It tests your command line tool by validating provided input and output test cases.
 
 ## Install
 
-TODO add curl command to download.
+```sh
+$ curl https://raw.githubusercontent.com/jan25/snap/main/snap.sh -o snap.sh
+$ chmod +x snap.sh
+# Optinally: move snap.sh to PATH
+
+$ sh snap.sh -h
+```
 
 ## Usage
 
