@@ -7,7 +7,7 @@
 ```sh
 $ curl https://raw.githubusercontent.com/jan25/snap/main/snap.sh -o snap.sh
 $ chmod +x snap.sh
-# Optinally: move snap.sh to PATH
+# Optionally: move snap.sh to PATH
 
 $ sh snap.sh -h
 ```
@@ -24,7 +24,7 @@ FAIL test2
 TOTAL 2 PASS 1 FAIL 1 SKIP 0
 ```
 
-> Note: `FILE` is a special placeholder which us used to pipe inputs to the command under test.
+> Note: `FILE` is a special placeholder which is used to pipe inputs to the command under test.
 
 
 Use `-u|--update` to let snap update snaphot files for failing tests.
