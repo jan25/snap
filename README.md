@@ -1,6 +1,6 @@
 # snap
 
-snap is a snapshot testing tool written in bash. It can be used to test your command line tools by validating provided input and output test cases.
+`snap` is a snapshot testing tool written in bash. It tests your command line tool by validating provided input and output test cases.
 
 ## Install
 
@@ -8,7 +8,7 @@ TODO add curl command to download.
 
 ## Usage
 
-TODO Some of features below are WIP.
+> TODO Some of features below are WIP.
 
 snap requires you to specify a target command to test, it then evaluates your test cases against the output from that command. To do this create snap.cmd file in the directory where you intend to put your test cases.
 
@@ -57,3 +57,16 @@ $ snap.sh /path/to/test/dir --parallel 3
 
 Use `--dry-run` option to print diff and not update snapshots.
 
+## Develop
+
+`examples` directory contains sample test cases to test snap locally.
+
+```sh
+$ snap.sh ./examples "cat FILE"
+```
+
+Use [`shellcheck`](https://github.com/koalaman/shellcheck) to catch potential bugs and conform with bash standards.
+
+```sh
+$ shellcheck snap.sh
+```
